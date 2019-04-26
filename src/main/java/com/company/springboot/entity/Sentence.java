@@ -22,4 +22,8 @@ public class Sentence extends AbstractEntity {
     @JoinColumn(name = "TEXT_ID")
     private Text text;
 
+    @Override
+    public String toString() {
+        return  "id = " + id + "{"+data+ ".}" ;
+    }
 }

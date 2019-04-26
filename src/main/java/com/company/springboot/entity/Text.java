@@ -28,5 +28,4 @@ public class Text extends AbstractEntity {
         this.name = name;
         this.sentences = new ArrayList<>();
     }
-
 }

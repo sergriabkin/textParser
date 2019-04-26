@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>Main!</div>
+
+<div>
+    <form method="post">
+
+        <p>Input your text:</p>
+        <input type="number" name="textId" placeholder="Text_ID"/>
+        <input type="text" name="inputString" placeholder="Input_String">
+        <button type="submit">Parse</button>
+
+    </form>
+</div>
+
+<br/>
+{{#sentences}}
+    * {{ . }}
+{{/sentences}}
+<br/>
+
+<br/>
+<a href="/">Start page</a>
+
+</body>
+</html>

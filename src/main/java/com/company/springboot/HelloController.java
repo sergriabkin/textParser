@@ -1,14 +1,26 @@
 package com.company.springboot;
 
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
-@RestController
+import java.util.Map;
+
+@Controller
 public class HelloController {
 
-    @RequestMapping("/")
-    public String index() {
-        return "Greetings from Spring Boot!";
+    @GetMapping("/")
+    public String greeting(Map<String, Object> model) {
+        return "greeting";
     }
+
+//    @GetMapping("/main")
+//    public String main(Map<String, Object> model) {
+//        String message = "some text";
+//
+//        model.put("message", message);
+//
+//        return "main";
+//    }
+
 
 }
